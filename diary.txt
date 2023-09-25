@@ -1,0 +1,6 @@
+- Mockup in Drawio, mit Bootstrap
+- Im ersten Schritt auf Auflößung 1024×768 
+
+Frage: Single Site Application
+
+- Vue und Bootstrap mit folgender Anleitung installiert: https://linuxhint.com/install-use-bootstrap-with-vue-js/
