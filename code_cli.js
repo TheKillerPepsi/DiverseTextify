@@ -22,6 +22,7 @@ const myArray = input.split(" ");
         while ( x < nongendered.length){
             if (e == nongendered[x]) {
                 console.log("non gendered word! " + e)
+                console.log("Change it to: " + gendered[e])
                 }
             x++
         }
