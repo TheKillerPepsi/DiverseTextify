@@ -13,19 +13,27 @@ const myArray = input.split(" ");
 // console.log(nongendered);
 // console.log(gendered);
 
-    myArray.forEach(e=>{
+    myArray.forEach(e=>{ //für jedes einzelne Element e in meinem Array
 
         // nongendered.indexOf(e)
         // console.log(e);
         x = 0
 
-        while ( x < nongendered.length){
-            if (e == nongendered[x]) {
-                console.log("non gendered word! " + e)
-                console.log("Change it to: " + gendered[e])
-                }
-            x++
-        }
+        while ( x < nongendered.length){  //tue dies, solange x nicht kleiner ist als die Länge
+           if (e == nongendered[x]) { //Wenn e
 
+            console.log("non gendered word! " + e);
+            console.log("Change it to: " + gendered[x]);
+            const ersetzen = myArray.indexOf(e);
+            console.log("myArray.indexOf(e): " + ersetzen);
+            console.log("gendered[ersetzen]= " + gendered[ersetzen]);
+            myArray[ersetzen] = gendered[ersetzen]
+            console.log("---------------------------------------------------------------------------------------------------");
+                
+                };
+            x++
+        };
     
-        })
+        });
+        console.log(" New Text: " + myArray)
+
