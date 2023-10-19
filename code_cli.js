@@ -21,21 +21,17 @@ const stringArray = input.split(" ");
 
         while ( x < nongendered.length){  //tue dies, solange x nicht kleiner ist als die Länge
            if (e == nongendered[x]) { //Wenn e
-
-            //console.log("non gendered word! " + e);
-            // console.log("Change it to: " + gendered[x]);
-            // const ersetzen = stringArray.indexOf(e);
-            // console.log("stringArray.indexOf(e): " + ersetzen);
-            // console.log("gendered[ersetzen]= " + gendered[ersetzen]);
-            // stringArray[ersetzen] = gendered[ersetzen]
             const indexStringArray = stringArray.indexOf(e);
             stringArray[indexStringArray] = gendered[x];
-            console.log("---------------------------------------------------------------------------------------------------");
                 
                 };
             x++
         };
     
         });
-        console.log(" New Text: " + stringArray)
+        //convert array back to string
+        finalString = stringArray.join(" ");
+        console.log(finalString);
+
+        
 
