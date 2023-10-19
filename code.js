@@ -9,31 +9,27 @@ function GenderIT() {
     // convert to a string
     String(input);
     //convert string into array
-    //es wird bei jedem Leerzeichen gesplittet, die Angabe ist in den Lerzeichen
-    const myArray = input.split(" ");
-    //document.getElementById("try").innerHTML = myArray[0];
+    const stringArray = input.split(" ");
+    stringArray.forEach(e=>{ //für jedes einzelne Element e in meinem Array
 
-    //mit dem Loop gehe ich durch jedes Wort im Array. in der Console würde jedes Wort ausgeführt werden
-    // let i = 0;
-    // while (i < myArray.length )
-    // {
-    //     document.getElementById("try").innerHTML = myArray[i];
-    //     i++;
-    // }
+        x = 0
 
-    let x = 0;
-    while (x < myArray.length ) 
-    {
-        if (myArray[x] == nongendered[x]) {
-            document.getElementById("try").innerHTML = "Nongendered Word!" + myArray[x];
-        } else {
-            document.getElementById("try").innerHTML = "Everything is fine!";
-            
-        }
-        x++;
-    }
-
+        while ( x < nongendered.length){  //tue dies, solange x nicht kleiner ist als die Länge
+           if (e == nongendered[x]) { //Wenn e
+                const indexStringArray = stringArray.indexOf(e);
+                stringArray[indexStringArray] = gendered[x];
+                
+                };
+            x++
+        };
     
+    });
+        
+    //convert array back to string
+    const finalString = stringArray.join(" ");
+    console.log(finalString);
+    document.getElementById('try').innerHTML=finalString;
+
 
 
 }
