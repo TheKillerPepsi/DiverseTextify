@@ -8,12 +8,12 @@ const input = prompt();
 //console.log(input);
 
 //convert string into array
-const myArray = input.split(" ");
+const stringArray = input.split(" ");
 // console.log(myArray);
 // console.log(nongendered);
 // console.log(gendered);
 
-    myArray.forEach(e=>{ //für jedes einzelne Element e in meinem Array
+    stringArray.forEach(e=>{ //für jedes einzelne Element e in meinem Array
 
         // nongendered.indexOf(e)
         // console.log(e);
@@ -24,10 +24,10 @@ const myArray = input.split(" ");
 
             console.log("non gendered word! " + e);
             console.log("Change it to: " + gendered[x]);
-            const ersetzen = myArray.indexOf(e);
-            console.log("myArray.indexOf(e): " + ersetzen);
+            const ersetzen = stringArray.indexOf(e);
+            console.log("stringArray.indexOf(e): " + ersetzen);
             console.log("gendered[ersetzen]= " + gendered[ersetzen]);
-            myArray[ersetzen] = gendered[ersetzen]
+            stringArray[ersetzen] = gendered[ersetzen]
             console.log("---------------------------------------------------------------------------------------------------");
                 
                 };
@@ -35,5 +35,5 @@ const myArray = input.split(" ");
         };
     
         });
-        console.log(" New Text: " + myArray)
+        console.log(" New Text: " + stringArray)
 
