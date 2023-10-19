@@ -23,11 +23,12 @@ const stringArray = input.split(" ");
            if (e == nongendered[x]) { //Wenn e
 
             console.log("non gendered word! " + e);
-            console.log("Change it to: " + gendered[x]);
-            const ersetzen = stringArray.indexOf(e);
-            console.log("stringArray.indexOf(e): " + ersetzen);
-            console.log("gendered[ersetzen]= " + gendered[ersetzen]);
-            stringArray[ersetzen] = gendered[ersetzen]
+            // console.log("Change it to: " + gendered[x]);
+            // const ersetzen = stringArray.indexOf(e);
+            // console.log("stringArray.indexOf(e): " + ersetzen);
+            // console.log("gendered[ersetzen]= " + gendered[ersetzen]);
+            // stringArray[ersetzen] = gendered[ersetzen]
+            e = gendered[x]
             console.log("---------------------------------------------------------------------------------------------------");
                 
                 };
