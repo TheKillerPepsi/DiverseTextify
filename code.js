@@ -28,7 +28,7 @@ function GenderIT() {
     //convert array back to string
     const finalString = stringArray.join(" ");
     console.log(finalString);
-    document.getElementById('try').innerHTML=finalString;
+    document.getElementById('output_field').value = finalString;
 
 
 
