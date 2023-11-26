@@ -1,13 +1,30 @@
-function GenderIT() {
+function main () {
+    // //read the input field
+    const input = document.getElementById('input_field').value;
+    // // convert to a string
+    String(input);
+    CheckInput(input)
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+function GenderIT(input) {
 
     const nongendered = ["Gerätewart", "Abteilungsleiter", "Unbekannter"];
     const gendered = ["Geräteaufsicht", "Abteilungsleitung", "unbekannte Person" ];
 
 
-        //read the input field
-    let input = document.getElementById('input_field').value;
-    // convert to a string
-    String(input);
+
     //convert string into array
     const stringArray = input.split(" ");
     stringArray.forEach(e=>{ //für jedes einzelne Element e in meinem Array
@@ -30,6 +47,28 @@ function GenderIT() {
     console.log(finalString);
     document.getElementById('output_field').value = finalString;
 
+};
+
+function containsBadCharacters(input) {
+    const badCharacters = ["<",">", "script"];
+    for (var i = 0; i < badCharacters.length; i++) { 
+        if (input.includes(badCharacters[i])) {
+            return true;
+        }
+    }
+    return false;
+};
+
+function CheckInput(input) {
 
 
-}
+    if (containsBadCharacters(input)) {
+        // console.log("Die Eingabe enthält unerwünschte Wörter. Bitte überprüfen Sie Ihren Text.");
+        window.alert("You used forbidden characters!")
+    } else {
+        console.log("Die Eingabe ist in Ordnung.");
+        GenderIT(input)
+    }
+
+
+};
