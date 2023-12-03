@@ -5,25 +5,12 @@ function main () {
     String(input);
     CheckInput(input)
 
-
-
-
-
 }
-
-
-
-
-
-
-
 
 function GenderIT(input) {
 
-    const nongendered = ["Gerätewart", "Abteilungsleiter", "Unbekannter"];
-    const gendered = ["Geräteaufsicht", "Abteilungsleitung", "unbekannte Person" ];
-
-
+    const nongendered = ["Gerätewart", "Abteilungsleiter", "Unbekannter", "Nutzer", "Studenten", "Mitarbeiter", "Programmierer"];
+    const gendered = ["Geräteaufsicht", "Abteilungsleitung", "unbekannte Person", "Nutzende", "Studierende", "Mitarbeitende", "Fachkräfte mit Kompetenzen in der Software-Programmierung" ];
 
     //convert string into array
     const stringArray = input.split(" ");
@@ -61,7 +48,6 @@ function containsBadCharacters(input) {
 
 function CheckInput(input) {
 
-
     if (containsBadCharacters(input)) {
         // console.log("Die Eingabe enthält unerwünschte Wörter. Bitte überprüfen Sie Ihren Text.");
         window.alert("You used forbidden characters!")
@@ -69,6 +55,5 @@ function CheckInput(input) {
         console.log("Die Eingabe ist in Ordnung.");
         GenderIT(input)
     }
-
 
 };
