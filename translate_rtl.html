@@ -32,19 +32,21 @@
     <!-- Header -->
     <div class="container-fluid">
         <div class="row">
-            <div class="col bg-secondary"> FAVICON</div>
+            <div class="col-1 bg-warning text-center">
+                <img src="./img/Textify_full_logo.svg" class="img-fluid" alt="Logo" style="max-width: 80%;">
+            </div>
             <div class="col bg-secondary">
                 <nav class="navbar navbar-expand-sm bg-secondary">
                     <ul class="navbar-nav">
                       <li class="nav-item">
                         <a class="nav-link text-light" href="./index.html">Home</a>
                       </li>
-                      <li class="nav-item">
-                        <a class="nav-link text-light" href="./translate.html"> Gender It!</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link text-light" href="#"> Change Language Direction</a>
-                    </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="./translate.html"> Gender It!</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="./index_rtl.html"> Change Language Direction</a>
+                        </li>
                     </ul>
                 </nav>
             </div>
@@ -70,7 +72,7 @@
                                     <button  type="button" class="btn btn-sm" disabled> Enter your text!</button>
                                 </div>
                                 <div class="col-12 bg-light p-3"> 
-                                <textarea id="input_field" class="form-control"  rows="10"></textarea>
+                                <textarea id="input_field" class="form-control"  rows="30"></textarea>
                                 </div>
                               </div>
                         </form>
@@ -78,10 +80,10 @@
                     <div class="col-5 bg-light p-3">
                         <form>
                             <div class="col-12 bg-light p-3"> 
-                            <button onclick="GenderIT()" type="button" class="btn btn-outline-secondary btn-sm"> Gender it!</button>
+                            <button onclick="main()" type="button" class="btn btn-outline-secondary btn-sm"> Gender it!</button>
                             </div>
                             <div class="col-12 bg-light p-3"> 
-                            <textarea readonly id="output_field" class="form-control"  rows="10"></textarea>
+                            <textarea readonly id="output_field" class="form-control"  rows="30"></textarea>
                             </div>
                         </form>
 
@@ -99,19 +101,23 @@
     <!-- Footer -->
     <div class="container-fluid bg-secondary">
         <div class="row">
-            <div class="col-5 text-light">
-                <p> DiverseTextify ist ein Produkt der Textify GmBH</p>
-                <p> Textify GMBH</p>
-                <p> Max-Mustermann-Straße 50</p>
-                <p> 12345678 Musterstadt</p>
-                <p> Mail: contact@textify.de </p>
+            <div class="col-5 text-truncate text-light">
+                <p> DiverseTextify ist ein Produkt der Textify GmBH
+                <br>
+                Textify GMBH
+                <br>
+                Max-Mustermann-Straße 50
+                <br>
+                12345678 Musterstadt
+                <br>
+                Mail: contact@textify.de </p>
             </div>
-            <div class="col p-5">
-                <p class="text-left text-light"> Impressum &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Datenschutz </p>  
+            <div class="col-2 p-5">
+                <p class="text-light"> Impressum &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Datenschutz </p>  
             </div>
-
         </div>
     </div>
+
 
   </body>
 </html>
