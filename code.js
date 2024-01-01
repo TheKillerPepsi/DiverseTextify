@@ -12,7 +12,7 @@ function GenderIT(input) {
     // const nongendered = ["Gerätewart", "Abteilungsleiter", "Unbekannter", "Nutzer", "Studenten", "Mitarbeiter", "Programmierer"];
     // const gendered = ["Geräteaufsicht", "Abteilungsleitung", "unbekannte Person", "Nutzende", "Studierende", "Mitarbeitende", "Fachkräfte mit Kompetenzen in der Software-Programmierung" ];
     const nongendered = ["Nutzer", "Studenten", "Programmierer", "Verbraucher", "Anwender", "Bediener", "Fachmänner", "Benutzername", "Benutzer", "Administrator", "Kundendienst", "Benutzerfehler", "Administratoren", "Verwalter", "Drittanbieter", "Drittanbietern", "Chef", "Fachmann", "Abonnent", "benutzerfreundlich", "Systembetreuer", "Spezialisten"];
-    const gendered = ["Nutzende", "Studierende", "Fachkräfte mit Kompetenzen in der Software-Programmierung", "Verbrauchende", "anwendende Person", "bedienende Person", "Fachkräfte", "Login", "nutzende Person", "Admin" , "Support", "Anwendungsfehler", "Administrierende", "verwaltende Person", "Drittanbietender", "Drittanbietende", "Leitungsperson", "Fachkraft", "Bezugsperson", "bedinugsfreundlich", "Systembetreeung", "spezialisierte Person" ];
+    const gendered = ["Nutzende", "Studierende", "Fachkräfte mit Kompetenzen in der Software-Programmierung", "Verbrauchende", "anwendende Person", "bedienende Person", "Fachkräfte", "Login", "nutzende Person", "Admin" , "Support", "Anwendungsfehler", "Administrierende", "verwaltende Person", "Drittanbietende", "Drittanbietende", "Leitungsperson", "Fachkraft", "Bezugsperson", "bedienungsfreundlich", "Systembetreuung", "spezialisierte Person" ];
 
 
     //convert string into array
